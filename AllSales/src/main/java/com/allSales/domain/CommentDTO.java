@@ -3,19 +3,16 @@ package com.allSales.domain;
 import java.io.Serializable;
 import java.util.Date;
 
-import javax.persistence.*;
-
 import org.hibernate.validator.constraints.NotEmpty;
 
-public class Comment implements Serializable{
+public class CommentDTO implements Serializable{
 	
-	
+	/**
+	 * 
+	 */
 	private static final long serialVersionUID = 1L;
 
-	@Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "commentId")
-    private Long id;
+	private Long id;
 
     private Date postingTime;
 
@@ -23,16 +20,11 @@ public class Comment implements Serializable{
     private String title;
 
     @NotEmpty(message = "{NotEmpty.validation}")
-    @Column(name="content", columnDefinition="TEXT")
     private String content;
 
-    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
-    @JoinColumn(name = "saleId")
-    private Sale sale;
+    public CommentDTO() {}
 
-    public Comment() {}
-
-    public Comment(String title, String content) {
+    public CommentDTO(String title, String content) {
         this.title = title;
         this.content = content;
     }
@@ -67,14 +59,6 @@ public class Comment implements Serializable{
 
     public void setContent(String content) {
         this.content = content;
-    }
-
-    public Sale getSale() {
-        return sale;
-    }
-
-    public void setSale(Sale sale) {
-        this.sale = sale;
     }
 
 }
