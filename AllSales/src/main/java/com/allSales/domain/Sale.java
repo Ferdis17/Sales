@@ -54,7 +54,7 @@ public class Sale implements Serializable{
 
 	    @JsonIgnore
 	    @Transient
-	    private MultipartFile dealImage;
+	    private MultipartFile saleImage;
 
 	    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
 	    @JoinColumn(name = "user_id")
@@ -140,12 +140,12 @@ public class Sale implements Serializable{
 	    }
 
 	    @XmlTransient
-	    public MultipartFile getDealImage() {
-	        return dealImage;
+	    public MultipartFile getSaleImage() {
+	        return saleImage;
 	    }
 
 	    public void setDealImage(MultipartFile dealImage) {
-	        this.dealImage = dealImage;
+	        this.saleImage = dealImage;
 	    }
 
 	    public Boolean getIsFeature() {
