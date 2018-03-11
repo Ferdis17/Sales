@@ -1,5 +1,9 @@
 package com.allSales.repository;
 
-public class BlogCategoryRepository {
+import org.springframework.data.repository.CrudRepository;
+
+import com.allSales.domain.BlogCategory;
+
+public interface BlogCategoryRepository extends CrudRepository<BlogCategory,Integer>{
 
 }
