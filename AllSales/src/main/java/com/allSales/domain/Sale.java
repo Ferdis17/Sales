@@ -18,6 +18,9 @@ import java.util.List;
 
 @Entity(name = "sale")
 public class Sale implements Serializable{
+	
+	private static final long serialVersionUID = 1L;
+
 		@Id
 	    @GeneratedValue(strategy = GenerationType.IDENTITY)
 	    @Column(name = "saleId")

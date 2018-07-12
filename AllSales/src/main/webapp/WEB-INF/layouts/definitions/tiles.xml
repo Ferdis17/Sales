@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache
+Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="baseLayout" template="/WEB-INF/layouts/template/base-layout.jsp">
+        <put-attribute name="title" value="Sample Title"/>
+        <put-attribute name="navigation" value="/WEB-INF/layouts/template/navigation.jsp"/>
+        <put-attribute name="content" value=""/>
+        <put-attribute name="jslib" value="/WEB-INF/layouts/template/js-libs.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/layouts/template/footer.jsp"/>
+    </definition>
+
+    <definition name="home" extends="baseLayout">
+        <put-attribute name="title" value="Home page"/>
+        <put-attribute name="content" value="/WEB-INF/views/home.jsp"/>
+    </definition>
+
+    <definition name="login" extends="baseLayout">
+        <put-attribute name="title" value="Login"/>
+        <put-attribute name="content" value="/WEB-INF/views/login.jsp"/>
+    </definition>
+
+    <definition name="register" extends="baseLayout">
+        <put-attribute name="title" value="Register"/>
+        <put-attribute name="content" value="/WEB-INF/views/register.jsp"/>
+    </definition>
+
+    <definition name="deal-post" extends="baseLayout">
+        <put-attribute name="title" value="Post a Deal"/>
+        <put-attribute name="content" value="/WEB-INF/views/deal-post.jsp"/>
+    </definition>
+
+    <definition name="deal-detail" extends="baseLayout">
+        <put-attribute name="title" value="Deal detail"/>
+        <put-attribute name="content" value="/WEB-INF/views/deal-detail.jsp"/>
+    </definition>
+
+    <definition name="deal-list" extends="baseLayout">
+        <put-attribute name="title" value="List Deal"/>
+        <put-attribute name="content" value="/WEB-INF/views/deal-list.jsp"/>
+    </definition>
+
+    <definition name="store" extends="baseLayout">
+        <put-attribute name="title" value="Stores"/>
+        <put-attribute name="content" value="/WEB-INF/views/store.jsp"/>
+    </definition>
+
+    <definition name="blog-post" extends="baseLayout">
+        <put-attribute name="title" value="Post a Blog"/>
+        <put-attribute name="content" value="/WEB-INF/views/blog-post.jsp"/>
+    </definition>
+
+    <definition name="blog-list" extends="baseLayout">
+        <put-attribute name="title" value="List Blog"/>
+        <put-attribute name="content" value="/WEB-INF/views/blog-list.jsp"/>
+    </definition>
+
+    <definition name="blog-detail" extends="baseLayout">
+        <put-attribute name="title" value="Blog Detail"/>
+        <put-attribute name="content" value="/WEB-INF/views/blog-detail.jsp"/>
+    </definition>
+
+    <definition name="error-forbidden" extends="baseLayout">
+        <put-attribute name="title" value="Error"/>
+        <put-attribute name="content" value="/WEB-INF/views/error-forbidden.jsp"/>
+    </definition>
+
+    <definition name="deal-not-found" extends="baseLayout">
+        <put-attribute name="title" value="Deal not found"/>
+        <put-attribute name="content" value="/WEB-INF/views/deal-not-found.jsp"/>
+    </definition>
+</tiles-definitions>

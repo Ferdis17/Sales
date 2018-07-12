@@ -1,0 +1,455 @@
+body {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+    height: 32rem;
+    background-color: #777;
+}
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.marketing h2 {
+    font-weight: 400;
+}
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+}
+
+.error {
+    color: red;
+    font-size: 13px;
+}
+
+#success {
+    display: none;
+}
+
+.wrapper {
+    margin-top: 70px;
+}
+
+header nav.navbar {
+    background-color: #062a44;
+}
+
+header nav.navbar .logo {
+    width: 48px;
+}
+
+header nav.navbar .post-a-deal {
+    color: rgba(255,255,255, 1) !important;
+}
+
+header nav.navbar .navbar-brand .high-light {
+    font-weight: bold;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+}
+
+.wrapper .title{
+    padding-bottom: 15px;
+    border-bottom: 1px solid #cccccc;
+    margin: 30px 0;
+}
+
+.inner-wrapper {
+    padding: 30px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+    min-height: 600px;
+}
+
+.deal-detail .deal-title {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.deal-detail .deal-content .price {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.deal-detail .deal-content .view-comment {
+    border-bottom: 1px dashed #ccc;
+    border-top: 1px dashed #ccc;
+    padding: 5px 0;
+    font-size: 12px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.deal-detail .deal-content .description {
+    font-size: 14px;
+}
+
+.deal-detail .deal-content .see-deal-btn {
+    margin: 10px 0;
+}
+
+.deal-detail .deal-content .profile-image-thumb {
+    float: left;
+    margin-right: 10px;
+}
+
+.frontpage-deals h1{
+    font-size: 24px;
+    padding: 0 0 10px;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 20px;
+}
+
+.deal-list .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.deal {
+    padding: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.deal a{
+     color: #000000;
+}
+
+.deal a:hover{
+    text-decoration: none;
+}
+
+.deal .image {
+    text-align: center;
+}
+
+.deal .image img {
+    height: 100px;
+    margin: 0 auto;
+}
+
+.deal .store {
+    margin-top: 3px;
+    color: #999;
+    font-size: 12px;
+}
+
+.deal .deal-title {
+    color: #0072bc;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.deal .price-user {
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.deal .price-user .price{
+    font-weight: bold;
+    color: #76b14c;
+    float: left;
+    width: 50%;
+}
+
+.deal .price-user .user {
+    float: right;
+}
+
+.deal .comment {
+    background: #eeeeee;
+    padding: 5px;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.filters {
+    border-right: 1px solid #cccccc;
+    padding: 0 10px;
+}
+
+.filters .filter {
+    padding-bottom: 15px;
+    border-bottom: 1px dotted #ccc;
+    margin-bottom: 10px;
+}
+
+.filters .filter-title {
+    font-size: 18px;
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 10px;
+    color: #28a745;
+}
+
+.filters ul {
+    padding: 0;
+}
+
+.filters ul li {
+    list-style: none;
+    font-size: 13px;
+    padding-bottom: 5px;
+}
+
+.filters ul li a {
+    color: #000000;
+}
+
+.filters ul li a:hover {
+    text-decoration: none;
+    color: #0072bc;
+}
+
+footer {
+    background: #062a44;
+    padding: 20px;
+    color: #fff;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #0072bc;
+}
+
+footer ul {
+    text-align: right;
+}
+
+footer ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.store-detail {
+    padding-bottom: 15px;
+    border-bottom: 1px dotted #ccc;
+    margin-bottom: 10px;
+}
+
+.store-detail .store-name img {
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+}
+
+.store-detail .store-description {
+    font-size: 12px;
+}
+
+.store-deal {
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    border: 1px solid #d6d6d6;
+    width: 100%;
+    max-height: 178px;
+    margin-bottom: 15px;
+}
+
+.store-deal-link:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.store-deal {
+    color: #000000;
+    text-decoration: none;
+    min-height: 120px;
+    padding-bottom: 10px;
+}
+
+.store-deal .price {
+    border-right: 1px solid #d6d6d6;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #333;
+    line-height: 120px;
+}
+
+.store-deal .main-deal {
+    padding-top: 10px;
+}
+
+.store-deal .main-deal .deal-cat {
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    border-radius: 2px;
+    padding: 0 4px;
+    height: 16px;
+    line-height: 16px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 9px;
+    background-color: #669;
+    margin-right: 5px;
+}
+
+.store-deal .main-deal .deal-title {
+    font-style: normal;
+    font-weight: 600;
+    line-height: 34px;
+    font-size: 29px;
+    margin-top: 5px;
+    color: #333;
+    max-height: 68px;
+    overflow: hidden;
+}
+
+.store-deal .main-deal .deal-description {
+    text-decoration: none;
+    color: #999;
+    max-height: 36px;
+    line-height: 18px;
+    overflow: hidden;
+    font-size: 13px;
+}
+
+.store-deal .big-button {
+    line-height: 120px;
+}
+
+.store-deal .big-button button {
+    width: 100%;
+}
+
+.comment {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px dashed #cccccc;
+}
+
+.comment h3 {
+    font-size: 28px;
+}
+
+.comment .let-us-know {
+    font-size: 14px;
+    color: #777;
+}
+
+.comment .commented {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+h3.people-think{
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.comment .comment-list .comment-item {
+    border: 1px dashed #eee;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.comment .comment-list .comment-item .comment-title {
+    padding: 5px 10px;
+    background: #eee;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.comment .comment-list .comment-item .comment-time {
+    color: #666666;
+    font-size: 12px;
+    padding: 5px 10px;
+    font-style: italic;
+}
+
+.comment .comment-list .comment-item .comment-content {
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.post-deal {
+    margin-right: 10px;
+}
+
+.loggin-form {
+    margin-bottom: 100px;
+}

@@ -1,8 +1,5 @@
 package com.allSales.exceptionHandler;
 
-/**
- * Created by Bi on 11/20/17.
- */
 public class AccessDeniedException extends RuntimeException {
     String link;
 
