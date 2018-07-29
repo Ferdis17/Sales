@@ -5,10 +5,10 @@
 
 <h1 class="title"><spring:message code="postdeal.title" /></h1>
 <p>Help others save money by finding the lowest price, best deals, and hot coupons.</p>
-<form:form modelAttribute="deal" enctype="multipart/form-data">
+<form:form modelAttribute="sale" enctype="multipart/form-data">
     <div class="form-group">
         <label for="dealUrl"><spring:message code="label.dealUrl" /></label>
-        <form:input class="form-control" placeholder="Deal URL" path="dealUrl" />
+        <form:input class="form-control" placeholder="Sale URL" path="dealUrl" />
         <div class="error"><form:errors path="dealUrl" /></div>
     </div>
     <div class="form-group">

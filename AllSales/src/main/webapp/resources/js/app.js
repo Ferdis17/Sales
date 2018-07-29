@@ -1,6 +1,3 @@
-/**
- * Created by Bi on 11/15/17.
- */
 
 function serializeObject(form) {
     var jsonObject = {};
@@ -43,11 +40,11 @@ $(document).ready(function () {
         var data = $("#comment-form").serialize();
 
         const dataToSend = JSON.stringify(serializeObject($('#comment-form')));
-        const dealId = $(".deal-id").data("dealid");
+        const saleId = $(".sale-id").data("salelid");
 
         $.ajax({
             type : 'POST',
-            url : contextRoot + '/rest/comment/' + dealId,
+            url : contextRoot + '/rest/comment/' + saleId,
             dataType : "json",
             data : dataToSend,
             contentType : 'application/json',

@@ -35,14 +35,14 @@ public class BlogController {
 	@GetMapping("/post")
 	public String postBlogForm(@ModelAttribute("blog")Blog blog, Model model) {
 		model.addAllAttributes(blogCategoryService.findAll());
-		return "BlogForm";
+		return "blogForm";
 	}
 	
 	@PostMapping("/post")
 	public String postBlog(@Valid Blog blog, BindingResult bindingResult, HttpServletRequest httpRequest, Model model) {
 		if(bindingResult.hasErrors()) {
 			model.addAttribute("categories", blogCategoryService.findAll());
-			return"BlogForm";
+			return"blogForm";
 		}
 		String rootDirectory = httpRequest.getSession().getServletContext().getRealPath("/");
 		MultipartFile blogImage = blog.getImage();
