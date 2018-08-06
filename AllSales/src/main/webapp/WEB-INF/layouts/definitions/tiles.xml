@@ -28,17 +28,17 @@ Software Foundation//DTD Tiles Configuration 3.0//EN"
 
     <definition name="deal-post" extends="baseLayout">
         <put-attribute name="title" value="Post a Deal"/>
-        <put-attribute name="content" value="/WEB-INF/views/deal-post.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/views/saleForm.jsp"/>
     </definition>
 
     <definition name="deal-detail" extends="baseLayout">
         <put-attribute name="title" value="Deal detail"/>
-        <put-attribute name="content" value="/WEB-INF/views/deal-detail.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/views/SaleDetail.jsp"/>
     </definition>
 
     <definition name="deal-list" extends="baseLayout">
         <put-attribute name="title" value="List Deal"/>
-        <put-attribute name="content" value="/WEB-INF/views/deal-list.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/views/saleList.jsp"/>
     </definition>
 
     <definition name="store" extends="baseLayout">
@@ -48,17 +48,17 @@ Software Foundation//DTD Tiles Configuration 3.0//EN"
 
     <definition name="blog-post" extends="baseLayout">
         <put-attribute name="title" value="Post a Blog"/>
-        <put-attribute name="content" value="/WEB-INF/views/blog-post.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/views/blogForm.jsp"/>
     </definition>
 
     <definition name="blog-list" extends="baseLayout">
         <put-attribute name="title" value="List Blog"/>
-        <put-attribute name="content" value="/WEB-INF/views/blog-list.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/views/blogList.jsp"/>
     </definition>
 
     <definition name="blog-detail" extends="baseLayout">
         <put-attribute name="title" value="Blog Detail"/>
-        <put-attribute name="content" value="/WEB-INF/views/blog-detail.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/views/blogDetail.jsp"/>
     </definition>
 
     <definition name="error-forbidden" extends="baseLayout">
@@ -68,6 +68,6 @@ Software Foundation//DTD Tiles Configuration 3.0//EN"
 
     <definition name="deal-not-found" extends="baseLayout">
         <put-attribute name="title" value="Deal not found"/>
-        <put-attribute name="content" value="/WEB-INF/views/deal-not-found.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/views/saleNotFound.jsp"/>
     </definition>
 </tiles-definitions>
