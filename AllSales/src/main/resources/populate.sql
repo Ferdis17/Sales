@@ -7,7 +7,7 @@ VALUES
   (5,'Fairfield','IA','209','52557'),
   (6,'FF','IA','aaa','11111');
 
-INSERT INTO `blog` (`blog_id`, `content`, `postDate`, `title`, `blog_cat_id`, `user_id`)
+INSERT INTO `blog` (`blogId`, `content`, `postDate`, `title`, `blogCatId`, `user_id`)
 VALUES
   (1,'With frequent Frontpage deals on protein powder, MyProtein has become a popular brand on Slickdeals. They offer a high-quality product at a great price, and if you haven\'t seen our taste test yet, check it out. But, did you know that MyProtein also has a fitness apparel line? Neither did we, but we recently had the opportunity to test out some of clothes they offer.\r\n\r\nGiven that we didn\'t even know MyProtein sold workout clothes, we immediately imagined getting swag-like apparel with giant logos, and were a bit hesitant to even do a review. But after looking at their clothing section, we were pleasantly surprised. Everything looked very stylish, and there was a 40% off coupon for all clothing, so you know that caught our eyes.\r\n\r\nItems We Tried\r\nMen\'s Fast-Track T-Shirt\r\nClassic Fit Joggers\r\nTru-Fit Sweatpants (I incorrectly said Pro-Tech Joggers in the video)\r\nSeamless Tank\r\nFast-Track Leggings\r\nAir Sports Bra\r\nTie Back Vest','2017-11-21 09:57:53','Are Their Clothes as Good as Their Supplements',1,1),
   (2,'Just weeks before Black Friday, Microsoft unleashed the Xbox One X into the hands of enthusiastic gamers, showcasing upgrades across the board: more memory, faster processing, and robust graphics capabilities.\r\n\r\nAs the Xbox One X closes the performance gap between console and PC gaming, its changes feel more evolutionary than revolutionary  especially since the Xbox One S is still an awesome machine  but the improvements in overall gaming experience and graphics are far from subtle with the addition of 4K native resolution and HDR (High Dynamic Range) support.\r\n\r\nLet\'s take a closer look at how the Xbox One X is making the future of gaming more accessible to the masses.\r\n\r\nSpecial thanks to Microsoft for providing a complimentary Xbox One X on release day so we could produce this review!','2017-11-21 10:00:17','Hands-on with Slickdeals: Microsoft Xbox One X Review',2,1),
@@ -15,7 +15,7 @@ VALUES
   (4,'If the latest flagship phones from brands like Apple, Samsung and Google top your family\'s holiday gift list this year, you\'ve likely already been dismayed by prices for these highly sought after phones reaching more than $900.\r\n\r\nBut don\'t rush to take out a second mortgage on your home  we\'ve compiled a list of Black Friday smartphone deals that should help cushion the blow to your wallet.\r\n\r\n2017 Black Friday iPhone X, 8 and 8 Plus Deals','2017-11-21 10:02:04','Where to Find the Best Smartphone Deals on Black Friday 2017',4,1),
   (5,'Reuters ivuga ko ubwo ibiganiro byari bigitangira, Umuyobozi wInteko Ishinga Amategeko, Jacob Mudenda yavuze ko Robert Mugabe yohereje ibaruwa ihamya ko yeguye, abibwira inteko yabyakiranye ibyishimo.\r\n\r\nMugabe yari yahamagaje inama isanzwe yabaminisitiri isanzwe iba ku wa Kabiri haza bane gusa abandi 17 bajya mu yo kumweguza.\r\n\r\nMugabe yirukanwe ku buyobozi bwishyaka ku wa Gatandatu asimbuzwa Emmerson Mnanganwa yari yavanye ku mwanya wa Visi Perezida.\r\n\r\nMu gitondo cyo kuri uyu wa Kabiri, Mnangagwa yasohoye itangazo avuga ko atakwitabira ibiganiro byari biteganyijwe hagati ye na Mugabe, amusaba kwegura cyangwa akabikorerwa ku ngufu.\r\n\r\nYavuze ko akiri mu buhungiro kandi adateganya kuhazva Mugabe atarava ku butegetsi kuko afite impungenge zumutekano we.\r\n\r\nYahunze Mugabe amaze kumwirukana bigafatwa nkuburyo bwo gushaka ko umugore we Grace azamusimbura.\r\n\r\nIgisirikare cyinjiye muri politiki nyuma yiyirukanwa rya Mnangagwa ugifitemo inshuti nyinshi zikomeye kuko yarwanye urugamba rwubwigenge.\r\n\r\nMugabe niwe Perezida rukumbi wayoboye Zimbabwe kuva yakwigenga ku bakoloni bAbongereza mu 1980.\r\n\r\nYabanje kuyobora nka Minisitiri wIntebe aba Perezida mu 1987, akomeza gutorerwa izindi manda mu buryo butavuzweho rumwe ndetse yaniteguraga kongera kwiyamamaza nubwo ku myaka 93 ubuzima bwe busa nkuburi ','2017-11-21 11:24:35','Very good deal in Walmart',3,5);
 
-INSERT INTO `blog_cat` (`blog_cat_id`, `description`, `blog_cat_name`)
+INSERT INTO `blog_cat` (`blogCatId`, `description`, `blogCatName`)
 VALUES
   (1,'Video Games','Video Games'),
   (2,'Entertainment','Entertainment'),
@@ -23,7 +23,7 @@ VALUES
   (4,'Tech & Electronic','Tech & Electronic'),
   (5,'Consumer News','Consumer News');
 
-INSERT INTO `comment` (`comment_id`, `content`, `postingTime`, `title`, `deal_id`)
+INSERT INTO `comment` (`commentId`, `content`, `postingTime`, `title`, `saleId`)
 VALUES
   (1,'This is the best deal I have ever seen','2017-11-21 10:03:28','Good deal',1),
   (2,'Love it so much','2017-11-21 10:16:16','I love it',2),
@@ -35,7 +35,7 @@ VALUES
   (8,'I love this product.','2017-11-21 10:37:53','Hello',1),
   (9,'I love it.','2017-11-21 11:06:47','My review',1);
 
-INSERT INTO `sale` (`deal_id`, `dealTitle`, `dealUrl`, `description`, `isFeature`, `isFrontPage`, `postDate`, `price`, `deal_cat_id`, `store_id`, `user_id`)
+INSERT INTO `sale` (`saleId`, `saleTitle`, `saleUrl`, `description`, `isFeature`, `isFrontPage`, `postDate`, `price`, `saleCatId`, `store_id`, `user_id`)
 VALUES
   (1,'918 Energy Room Darkening Energy Efficient Curtain Panel','https://www.walmart.com/ip/No-918-Energy-Room-Darkening-Energy-Efficient-Curtain-Panel/56147733?u1=c5064b04ced211e7a3029e6251c4153f0INT&oid=223073.1&wmlspartner=lw9MynSeamY&sourceid=40268932733043744489&affillinktype=10&veh=aff','Room darkening energy efficient curtain panel Features:\r\n\r\nEnergy Efficient\r\nLight Filtering\r\nNoise Reducing\r\nMachine washable\r\n\r\nRoom darkening energy efficient curtain panel Features:\r\n\r\nEnergy Efficient\r\nLight Filtering\r\nNoise Reducing\r\nMachine washable\r\n\r\nRoom darkening energy efficient curtain panel Features:\r\n\r\nEnergy Efficient\r\nLight Filtering\r\nNoise Reducing\r\nMachine washable',b'1',b'1','2017-11-21 09:44:35',50.00,2,1,1),
   (2,'LIFE A6 Smart Cleaning Vacuum Robot Dust Cleaner 2Modes Auto Sweeping Machine','https://www.ebay.com/itm/ILIFE-A6-Smart-Cleaning-Vacuum-Robot-Dust-Cleaner-2Modes-Auto-Sweeping-Machine/162725300060?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2057872.m2749.l2649&afepn=5337259887&rmvSB=true','Apparently this does pretty good on carpets, as it doesn\'t use bristles found on almost every other Robot vacuum. It has a rubber roller type system.\r\n\r\nApparently this does pretty good on carpets, as it doesn\'t use bristles found on almost every other Robot vacuum. It has a rubber roller type system.\r\n\r\nApparently this does pretty good on carpets, as it doesn\'t use bristles found on almost every other Robot vacuum. It has a rubber roller type system.',b'1',b'1','2017-11-21 09:45:52',112.00,1,2,1),
@@ -46,7 +46,7 @@ VALUES
   (7,'PowerColor Red Dragon Radeon RX 580 8GB Video Card','https://slickdeals.net/f/10865363-powercolor-red-dragon-radeon-rx-580-8gb-214-98-as-low-as-195?src=catpagev2_catnav_computers','Newegg has PowerColor Red Dragon Radeon RX 580 8GB 256-Bit GDDR5 PCI Express 3.0 Video Card (AXRX 580 8GBD5-3DHDV2/OC) for $249.99 - $25 w/ MasterPass Checkout promo code MPBF17 - $10 Rebate = $214.99. Shipping is free. Thanks tangers42\r\n\r\nNote, also includes QUAKE Champions Pack (automatically added in cart). Must checkout via MasterPass to use the $25 off promo code.\r\nDeal Image\r\nDeal Image\r\nDeal Image\r\n',b'0',b'0','2017-11-21 09:55:34',215.00,1,5,1),
   (8,'ASUS GeForce GTX 1060 3GB','https://slickdeals.net/f/10869923-asus-geforce-gtx-1060-3gb-192-bit-gddr5-phoenix-fan-edition-graphics-card-ph-gtx1060-3g-for-147-99-ar-w-filler-masterpass-newegg?src=catpagev2_catnav_computers','ASUS GeForce GTX 1060 3GB 192-Bit GDDR5 Phoenix Fan Edition Graphics Card (PH-GTX1060-3G) [newegg.com]\r\n$192.99 - $20.00 Rebate [newegg.com] = $172.99 AR + Free Ship\r\nLimit 1\r\n\r\nAdd $7.01 worth of FAR Items to Cart: HERE or HERE\r\nCheckout with MasterPass and use Promo Code: MPBF17 \r\nExample Filler: Rosewill 120mm Red LED Computer Case Cooling Fan with LP4 Adapter (RFA-120-RL) [newegg.com]\r\nSubtotal: $200.99\r\nMasterPass Discount: - $25.00 \r\nAC Total: $175.99\r\nAsus Rebate [newegg.com]\r\nRosewill Rebate [newegg.com]\r\nFinal Total: $147.99 AR + Free Ship',b'0',b'0','2017-11-21 09:56:35',147.00,1,2,1);
 
-INSERT INTO `saleCat` (`deal_cat_id`, `description`, `deal_cat_name`)
+INSERT INTO `saleCat` (`saleCatId`, `description`, `saleCatName`)
 VALUES
   (1,'Tech & Electronic','Tech & Electronic'),
   (2,'Clothing & Accessories','Clothing & Accessories'),
