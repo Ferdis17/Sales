@@ -45,7 +45,7 @@ public class Sale implements Serializable{
 	    private String description;
 
 	    @ManyToOne(fetch = FetchType.EAGER)
-	    @JoinColumn(name = "deal_cat_id")
+	    @JoinColumn(name = "saleCatId")
 	    private SaleCategory saleCategory;
 
 	    @ManyToOne(fetch = FetchType.EAGER)
@@ -64,7 +64,7 @@ public class Sale implements Serializable{
 	    private User user;
 
 	    @OneToMany(
-	            mappedBy = "deal",
+	            mappedBy = "sale",
 	            cascade = CascadeType.ALL,
 	            fetch = FetchType.EAGER,
 	            orphanRemoval = true
@@ -130,7 +130,7 @@ public class Sale implements Serializable{
 	        return saleCategory;
 	    }
 
-	    public void setDealCategory(SaleCategory saleCategory) {
+	    public void setSaleCategory(SaleCategory saleCategory) {
 	        this.saleCategory = saleCategory;
 	    }
 
@@ -147,8 +147,8 @@ public class Sale implements Serializable{
 	        return saleImage;
 	    }
 
-	    public void setDealImage(MultipartFile dealImage) {
-	        this.saleImage = dealImage;
+	    public void setSaleImage(MultipartFile saleImage) {
+	        this.saleImage = saleImage;
 	    }
 
 	    public Boolean getIsFeature() {

@@ -71,7 +71,7 @@ public class SaleController {
 		sale.setStore(store);
 		
 		SaleCategory saleCategory = saleCategoryService.findOne(sale.getSaleCategory().getId());
-		sale.setDealCategory(saleCategory);
+		sale.setSaleCategory(saleCategory);
 		
 		saleService.save(sale);
 		

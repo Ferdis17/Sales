@@ -66,6 +66,7 @@ public class RootApplicationContextConfig {
 		properties.put("hibernate.c3p0.min_size", "2");
 		properties.put("hibernate.c3p0.max_size", "5");
 		properties.put("hibernate.c3p0.timeout", "300"); // 5mins
+		properties.put("jdbc.useSSL", "false");
 
 		return properties;
 	}
