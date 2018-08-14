@@ -7,14 +7,14 @@
 <p>Help others save money by finding the lowest price, best deals, and hot coupons.</p>
 <form:form modelAttribute="sale" enctype="multipart/form-data">
     <div class="form-group">
-        <label for="dealUrl"><spring:message code="label.dealUrl" /></label>
-        <form:input class="form-control" placeholder="Sale URL" path="dealUrl" />
-        <div class="error"><form:errors path="dealUrl" /></div>
+        <label for="saleUrl"><spring:message code="label.saleUrl" /></label>
+        <form:input class="form-control" placeholder="Sale URL" path="saleUrl" />
+        <div class="error"><form:errors path="saleUrl" /></div>
     </div>
     <div class="form-group">
-        <label for="dealTitle"><spring:message code="label.dealTitle" /></label>
-        <form:input class="form-control" placeholder="Deal Title" path="dealTitle" />
-        <div class="error"><form:errors path="dealTitle" /></div>
+        <label for="saleTitle"><spring:message code="label.saleTitle" /></label>
+        <form:input class="form-control" placeholder="Sale Title" path="saleTitle" />
+        <div class="error"><form:errors path="saleTitle" /></div>
     </div>
     <div class="form-group">
         <label for="price"><spring:message code="label.price" /></label>
@@ -28,7 +28,7 @@
     </div>
     <div class="form-group">
         <label for="category"><spring:message code="label.category" /></label>
-        <form:select class="form-control" id="category" path="dealCategory.id" >
+        <form:select class="form-control" id="category" path="saleCategory.id" >
             <form:option value="0"><spring:message code="label.selectCategory" /></form:option>
             <form:options items="${categories}" itemLabel="name" itemValue="id" />
         </form:select>
@@ -43,9 +43,9 @@
         <div class="error"><form:errors path="store" /></div>
     </div>
     <div class="form-group">
-        <label for="dealImage"><spring:message code="label.dealImage" /></label>
-        <form:input type="file" class="form-control" id="dealImage" path="dealImage" />
-        <div class="error"><form:errors path="dealImage" /></div>
+        <label for="saleImage"><spring:message code="label.saleImage" /></label>
+        <form:input type="file" class="form-control" id="saleImage" path="saleImage" />
+        <div class="error"><form:errors path="saleImage" /></div>
     </div>
     <div class="form-row">
         <div class="form-check">

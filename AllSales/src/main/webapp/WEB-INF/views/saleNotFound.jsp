@@ -6,7 +6,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
 <div class="deal-detail inner-wrapper">
-    <h1 class="deal-title">Can not found deal with ID ${invalidDealId}</h1>
+    <h1 class="deal-title">Can not found deal with ID ${invalidSaleId}</h1>
     <p>Url: ${url}</p>
     <p>Exception: ${exception}</p>
 </div>

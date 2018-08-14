@@ -14,7 +14,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a href="<spring:url value="/deals/categories/0"/>" class="nav-link">Deals</a>
+                    <a href="<spring:url value="/sales/categories/0"/>" class="nav-link">Sales</a>
                 </li>
                 <li class="nav-item">
                     <a href="<spring:url value="/stores/1"/>" class="nav-link">Store</a>
@@ -34,7 +34,7 @@
                 </sec:authorize>
                 <sec:authorize access="isAuthenticated()">
                     <li class="nav-item post-deal">
-                        <a href="<spring:url value="/deals/post"/>" class="nav-link btn btn-outline-success post-a-deal">Post a Deal</a>
+                        <a href="<spring:url value="/sales/post"/>" class="nav-link btn btn-outline-success post-a-deal">Post a Sale</a>
                     </li>
                     <li class="nav-item">
                         <a href="<spring:url value="/blog/post"/>" class="nav-link btn btn-outline-success post-a-deal">Post a Blog</a>
