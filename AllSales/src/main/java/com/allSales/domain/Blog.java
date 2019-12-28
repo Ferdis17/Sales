@@ -36,7 +36,7 @@ public class Blog {
 	private Date postDate;
 	
 	@ManyToOne(fetch = FetchType.EAGER)
-	@Column(name = "blogCatId")
+	@JoinColumn(name = "blogCatId")
 	private BlogCategory blogCategory;
 	
 	@JsonIgnore

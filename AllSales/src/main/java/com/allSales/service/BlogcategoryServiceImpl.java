@@ -9,7 +9,7 @@ import com.allSales.domain.BlogCategory;
 import com.allSales.repository.BlogCategoryRepository;
 
 @Service
-public class BlogcategoryImpl implements BlogCategoryService{
+public class BlogcategoryServiceImpl implements BlogCategoryService{
 	
 	@Autowired
 	BlogCategoryRepository blogCategoryRepository;
