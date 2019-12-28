@@ -23,7 +23,7 @@ public class CommentRestController {
 
 	@PostMapping(value = "/{saleId}")
 	@ResponseStatus(value = HttpStatus.CREATED)
-	public CommentDTO saveComment(@Valid @RequestBody CommentDTO comment, @PathVariable("dealId") Long saleId) {
+	public CommentDTO saveComment(@Valid @RequestBody CommentDTO comment, @PathVariable("saleId") Long saleId) {
 		return commentSecrvice.save(comment, saleId);
 	}
 

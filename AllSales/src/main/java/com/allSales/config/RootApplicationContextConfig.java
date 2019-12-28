@@ -28,7 +28,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement
 @EnableJpaRepositories(basePackages = { "com.allSales.repository" })
 @PropertySource(value = { "classpath:application.properties" })
-@ComponentScan("com.sales")
+@ComponentScan("com.allSales")
 public class RootApplicationContextConfig {
 	
 	@Autowired
@@ -40,7 +40,7 @@ public class RootApplicationContextConfig {
 		vendorAdapter.setGenerateDdl(true);
 		LocalContainerEntityManagerFactoryBean factory = new LocalContainerEntityManagerFactoryBean();
 		factory.setJpaVendorAdapter(vendorAdapter);
-		factory.setPackagesToScan("com.allSales.domain");
+		factory.setPackagesToScan("com.allSales");
 		factory.setDataSource(dataSource());
 		factory.afterPropertiesSet();
 		//factory.setJpaPropertyMap(hibernateJpaProperties());
